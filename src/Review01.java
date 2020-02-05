@@ -65,8 +65,8 @@ public class Review01 {
 
         //Assignment #9
         //method 1: you could use a "while" loop to automatically fill the array with the values
-        //method 2: you could create a method that has you input the cost of a single bottle, and a previously created array. it would fill the array, then return it
-
+        //method 2: you can use "do-while" loops
+        //potention third method: methods
 
         //Assignment #10
         //creating an array with 10 rows and 3 columns
