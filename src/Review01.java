@@ -50,7 +50,7 @@ public class Review01 {
         //creating a variable containing the cost of a single bottle
         double bottleCost = packageCost/packageTotal;
         for (int i = 1; i <= packageTotal; i++) {
-            System.out.println("The price of " +i+ " bottle(s) is $" +(bottleCost*i));
+            System.out.println("The price of " +i+ " bottle(s) of " +brandName+ " is $" +(bottleCost*i));
         }
         System.out.println();
 
