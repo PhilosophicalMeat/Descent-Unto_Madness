@@ -27,18 +27,19 @@ public class Review02 {
         System.out.println("Number of males: " +numMale);
         System.out.println("Number of females: " +numFemale);
 
-        //Exercise 3
-        String[] instArray = {"cello", "guitar", "violin", "double bass"},
-         vowelArray = {"a", "e", "i", "o", "u"}, instArrayNew = new String[instArray.length];
-        for (int i = 0; i < instArray.length; i++) {
-            for (int j = 0; j < vowelArray.length; j++) {
-                instArrayNew[i] = instArray[i];
-                instArrayNew[i].replace(vowelArray[j], "");
+        //Exercise #3
+        String instrumentsArray[] = {"cello", "guitar", "violin", "double bass"};
+        String vowelsArray[] = {"a", "e", "i", "o", "u"};
+        String vowelReplace[] = new String[instrumentsArray.length];
+        for (int i = 0; i < instrumentsArray.length; i++) {
+            vowelReplace[i] = instrumentsArray[i];
+            for (int j = 0; j < vowelsArray.length; j++) {
+                vowelReplace[i] = vowelReplace[i].replace(vowelsArray[j], "");
             }
-            System.out.println(instArrayNew[i]);
+            System.out.println(vowelReplace[i]);
         }
 
-        //Exercise 4
+        //Exercise #4
 
     }
 }
