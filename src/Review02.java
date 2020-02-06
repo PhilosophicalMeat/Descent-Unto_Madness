@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.lang.String;
+import java.util.ArrayList;
 public class Review02 {
     public static void main(String[] args) {
         //Exercise #1
@@ -40,6 +41,44 @@ public class Review02 {
         }
 
         //Exercise #4
+        int divisorCount = 0;
+        for (int i = 1; i < 1000; i++) {
+            if(i%3 == 0){
+                divisorCount += 1;
+            }
+        }
+        System.out.println("Multiples of 3 under 1000: " +divisorCount);
+
+        //Exercise #5
+        for (int i = 1; i < 20; i++) {
+            System.out.println("Single: " +i+ "     Double: " +(i*2)+ "     Triple: " +(i*3));
+        }
+
+        //Exercise #6
+        for (int i = 0; i < 4; i++) {
+            System.out.println("white-black-white-black-white-black-white-black");
+            System.out.println("black-white-black-white-black-white-black-white");
+        }
+
+        //Exercise #7
+        int[] numArrayOne = {1,2,4,3,5};
+        boolean leastToGreat = true, greatToLeast = true;
+        int tempVal = numArrayOne[0];
+        for (int i = 1; i < numArrayOne.length; i++) {
+            if(tempVal < numArrayOne[i]){
+                greatToLeast = false;
+            }
+            else if(tempVal > numArrayOne[i]){
+                leastToGreat = false;
+            }
+            tempVal = numArrayOne[i];
+        }
+        if(leastToGreat == false && greatToLeast == false){
+            System.out.println("The numbers are not in order");
+        }
+        else{
+            System.out.println("The numbers are in order");
+        }
 
     }
 }
