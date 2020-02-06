@@ -50,7 +50,7 @@ public class Review02 {
         System.out.println("Multiples of 3 under 1000: " +divisorCount);
 
         //Exercise #5
-        for (int i = 1; i < 20; i++) {
+        for (int i = 1; i <= 20; i++) {
             System.out.println("Single: " +i+ "     Double: " +(i*2)+ "     Triple: " +(i*3));
         }
 
@@ -80,5 +80,35 @@ public class Review02 {
             System.out.println("The numbers are in order");
         }
 
+        //Exercise #8
+        int[] numCompareArray = {1,4,7,8,7};
+        boolean matchFound = false;
+        for (int i = 0; i < numCompareArray.length; i++) {
+            for (int j = 1; j < numCompareArray.length; j++) {
+                if(numCompareArray[i]==numCompareArray[j] && i!= j){
+                    matchFound = true;
+                }
+            }
+        }
+        if(matchFound == true){
+            System.out.println("Pair of numbers found");
+        }
+        else if(matchFound == false){
+            System.out.println("No pairs found");
+        }
+
+
+        //Exercise #9
+        String[] diagArray = {"D", " I", "  A", "   G", "    O",
+                "     N", "      A", "       L", "        L", "         Y"};
+        for (int i = 0; i < diagArray.length; i++) {
+            System.out.println(diagArray[i]);
+        }
+
+        //Exercise #10
+        String results = "Manchester United 1 Chelsea 0, " +
+                "Arsenal 1 Manchester United 1, Manchester United 3 Fulham 1," +
+                " Liverpool 2 Manchester United 1, Swansea 2 Manchester United 4";
+        //coming back to this one
     }
 }
