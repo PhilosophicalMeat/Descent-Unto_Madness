@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class Review03 {
     public static void main(String[] args) {
 
+        //YOURE NOT DONE HERE. GET TO WORK
+
+
         //for(int ;array) example
         int[] tempArray = {10,9,8,7,6,5,4,3,2,1,0};
         for (int i : tempArray) {
