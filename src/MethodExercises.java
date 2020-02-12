@@ -12,8 +12,6 @@ public class MethodExercises {
         nimStartAmount = input.nextInt();
         checkStartAmount(nimStartAmount);
         while(nimStartAmount > 0) {
-            int decAmount = 0;
-            checkPlayerOneTurn();
 
         }
     }
@@ -28,19 +26,8 @@ public class MethodExercises {
             System.out.println("Value accepted");
         }
     }
-    //method for checking player's removal amount
-    public static void checkPlayerOneTurn(int tempInt, int tempCount){
-        if(tempInt > 3 || tempInt <=0 || tempCount < tempInt){
-            System.out.println("There are " +tempCount+ " stones remaining. Player One's turn.");
-            System.out.println("error: invalid input. please enter a value between 1 and 3 that does not exceed the number of remaining stones");
-            tempInt = input.nextInt();
-            checkPlayerOneTurn(tempInt, tempCount);
-        }
-        else{
-            tempCount -= tempInt;
-            if(tempCount == 0){
-                System.out.println("Player One loses. Player Two wins!!!");
-            }
-        }
+    //method for player one's turn
+    public static void playerOneTurn(int tempCount){
+
     }
 }
